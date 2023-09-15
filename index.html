@@ -3,6 +3,32 @@
 <html> <!--dit is mijn hmtl-element--> 
     <head>
         <style>
+             /* Basisstijl voor het menu */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        /* Stijl voor het submenu */
+        ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff; /* Achtergrondkleur van het submenu */
+            border: 1px solid #ccc; /* Rand rondom het submenu */
+            padding: 10px; /* Ruimte binnen het submenu */
+        }
+
+        li:hover ul {
+            display: block;
+        }
             body{
                 background-color:rgb(127, 212, 255);
             }
